@@ -1,0 +1,8 @@
+<form method="post" action="">
+    <div>
+        <input type="text" name="name" placeholder="name">
+        <input type="text" name="description" placeholder="description">
+        <input type="text" name="cost" placeholder="cost">
+        <button>Добавить</button>
+    </div>
+</form>
