@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<div>
+    <nav>
+        <button><a href="/">Главная</a></button>
+        <button><a href="/reg">Регистрация</a></button>
+        <button><a href="/login">Вход</a></button>
+        <button><a href="/logout">Выход</a></button>
+    </nav>
+</div>
+{% block body %}
+{% endblock %}
+</body>
+</html>
