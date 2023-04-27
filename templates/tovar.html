@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Товар
+{% endblock %}
+
+
+{% block body %}
+<table>
+<tr>
+    <th scope="col">Название</th>
+    <th scope="col">Описание</th>
+    <th scope="col">Цена</th>
+</tr>
+</table>
+{% for row in tovar %}
+<table>
+<tr>
+    <td>{{ row.1 }}</td>
+    <td>{{ row.2 }}</td>
+    <td>{{ row.3 }}</td>
+    <td>{{ row.4 }}</td>
+</tr>
+{% endfor %}
+</table>
+{% include 'add_case.html' %}
+{% endblock %}
